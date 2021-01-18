@@ -5,21 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="icon" href="icon.jpg" type="image/gif" sizes="16x16">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-    <div><b>Navigation</b>
-        <a href="index.html">Home</a> | 
-        <a href="page2.html">Menu</a> | 
-        <b>About Us</b>
+<body class="bg-gray-300 mx-5">
+    <div class=""><b class="text-2xl">Navigation</b><br>
+        <a class="hover:underline hover:text-blue-500" href="index.html">Home</a> | 
+        <a class="hover:underline hover:text-blue-500" href="page2.html">Menu</a> | 
+        <span class="font-bold">About Us</span>
     </div>
 
-    <h2>Stacks on Stacks was born of a simple dream...</h2>
+    <h2 class="my-5 text-3xl font-bold">Stacks on Stacks was born of a simple dream...</h2>
 
-    <p>...We simply wanted to be able to have All-You-Can-Eat pancakes without subjecting ourselves to an IHOP.<br>
+    <p class="italic">...We simply wanted to be able to have All-You-Can-Eat pancakes without subjecting ourselves to an IHOP.<br>
     To be able to enjoy our food at a restaurant with a Health Rating higher than a Waffle House. <br>
     The comfort of sitting down for a meal at your in-laws' house, but without it being a Denny's. <br>
     So, the next time you're driving home at 4AM with a hankering for something delicious, let <em>Stacks on Stacks</em> be your <b>S.o.S!</b>
     </p>
-    <img src="aboutStack.jpg" width="500" height="251">
+    <br>
+    <p class="">Have an idea for a new flavour? Let us know and you may see it on the menu next time!</p>
+    <form netlify class="my-5">
+        <label class="block mt-4 font-bold" for="name">What is your name?</label>
+        <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-blue-500
+        focus:border-blue-500" type="text" id="name" name="name">
+      
+        <label class="block mt-4 font-bold" for="email">What is your email address?</label>
+        <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-blue-500
+        focus:border-blue-500" type="text" id="email" name="email">
+
+        <label class="block mt-4 font-bold" for="flavour">What flavour would you  like to see?</label>
+        <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-blue-500
+        focus:border-blue-500" type="text" id="flavour" name="flavour">
+      
+        <button class="block mt-4 text-white bg-blue-500 rounded px-4 py-2">Submit Your Idea!</button>
+      </form>
+    <img src="aboutStack.jpg" class="rounded-lg">
 </body>
 </html>
